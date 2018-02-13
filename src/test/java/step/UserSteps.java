@@ -3,8 +3,9 @@ package step;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 
+import com.google.gson.Gson;
+
 import bo.User;
-import bo.factory.UserFactory;
 import core.driver.WebDriverSingleton;
 import core.logger.LoggerSingleton;
 import cucumber.api.java.en.And;
@@ -34,15 +35,17 @@ public class UserSteps {
 	}
 
 	@And("^user performs login in$")
-	public InboxListPage logIn(){
-		User user = UserFactory.getModule5testmailboxUser();
+	public InboxListPage logIn(String jsonUser){
+		Gson gson = new Gson();
+		User user = gson.fromJson(jsonUser, User.class);
 		return new LoginPage(driver).fillInUserLogin(user.getLogin()).
 				fillInPassword(user.getPassword()).clickLoginButton();
 	}
 
-	@Then("^user login name is displayed at home page$")
-	public void getActualUserName(){
-		User user = UserFactory.getModule5testmailboxUser();
+	@Then("^user login name is displayed at home page shoud be:$")
+	public void getActualUserNameAndCompareWithExpectedName(String jsonUser){
+		Gson gson = new Gson();
+		User user = gson.fromJson(jsonUser, User.class);
 		String actualUserName = new ToolbarComponent(driver).getUserName();
 		LoggerSingleton.getLogger().info(String.format("Actual user name is: %s", actualUserName));
 		Assert.assertEquals(actualUserName, user.getLogin());

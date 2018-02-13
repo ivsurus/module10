@@ -3,6 +3,12 @@ Feature: Yandex mail box folders test
   Background: 
     Given user navigates to yandex home page
     And user performs login in
+       """
+      {	
+        "login": "module5testmailbox",
+        "password": "qwerty12345"
+      }
+      """
 
   @folders_functionality
   Scenario Outline: Yandex Drafts and Sent folders test

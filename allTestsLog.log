@@ -531,3 +531,63 @@
 2018-02-13 13:10:23.930 [main] INFO  core.logger.LoggerSingleton - Navigate to URL: http://yandex.com
 2018-02-13 13:10:39.995 [main] INFO  core.logger.LoggerSingleton - Actual user name is: module5testmailbox
 2018-02-13 13:10:42.436 [main] INFO  core.logger.LoggerSingleton - Browser will be closed now...
+2018-02-13 16:47:25.352 [main] INFO  core.logger.LoggerSingleton - Properties file is readed successfully
+2018-02-13 16:47:27.950 [main] INFO  core.logger.LoggerSingleton - Chrome browser is set
+2018-02-13 16:47:27.955 [main] INFO  core.logger.LoggerSingleton - Navigate to URL: http://yandex.com
+2018-02-13 16:53:45.993 [main] INFO  core.logger.LoggerSingleton - Properties file is readed successfully
+2018-02-13 16:53:48.591 [main] INFO  core.logger.LoggerSingleton - Chrome browser is set
+2018-02-13 16:53:48.619 [main] INFO  core.logger.LoggerSingleton - Navigate to URL: http://yandex.com
+2018-02-13 16:58:26.861 [main] INFO  core.logger.LoggerSingleton - Properties file is readed successfully
+2018-02-13 16:58:29.488 [main] INFO  core.logger.LoggerSingleton - Chrome browser is set
+2018-02-13 16:58:29.518 [main] INFO  core.logger.LoggerSingleton - Navigate to URL: http://yandex.com
+2018-02-13 17:16:29.450 [main] INFO  core.logger.LoggerSingleton - Properties file is readed successfully
+2018-02-13 17:16:32.078 [main] INFO  core.logger.LoggerSingleton - Chrome browser is set
+2018-02-13 17:16:32.084 [main] INFO  core.logger.LoggerSingleton - Navigate to URL: http://yandex.com
+2018-02-13 17:16:38.751 [main] INFO  core.logger.LoggerSingleton - Actual user name is: module5testmailbox
+2018-02-13 17:34:28.624 [main] INFO  core.logger.LoggerSingleton - Properties file is readed successfully
+2018-02-13 17:34:31.223 [main] INFO  core.logger.LoggerSingleton - Chrome browser is set
+2018-02-13 17:34:31.242 [main] INFO  core.logger.LoggerSingleton - Navigate to URL: http://yandex.com
+2018-02-13 17:36:08.891 [main] INFO  core.logger.LoggerSingleton - Properties file is readed successfully
+2018-02-13 17:36:11.546 [main] INFO  core.logger.LoggerSingleton - Chrome browser is set
+2018-02-13 17:36:11.550 [main] INFO  core.logger.LoggerSingleton - Navigate to URL: http://yandex.com
+2018-02-13 17:37:21.982 [main] INFO  core.logger.LoggerSingleton - Properties file is readed successfully
+2018-02-13 17:37:24.551 [main] INFO  core.logger.LoggerSingleton - Chrome browser is set
+2018-02-13 17:37:24.575 [main] INFO  core.logger.LoggerSingleton - Navigate to URL: http://yandex.com
+2018-02-13 17:46:28.051 [main] INFO  core.logger.LoggerSingleton - Properties file is readed successfully
+2018-02-13 17:46:30.729 [main] INFO  core.logger.LoggerSingleton - Chrome browser is set
+2018-02-13 17:46:30.734 [main] INFO  core.logger.LoggerSingleton - Navigate to URL: http://yandex.com
+2018-02-13 17:48:31.954 [main] INFO  core.logger.LoggerSingleton - Properties file is readed successfully
+2018-02-13 17:48:34.633 [main] INFO  core.logger.LoggerSingleton - Chrome browser is set
+2018-02-13 17:48:34.638 [main] INFO  core.logger.LoggerSingleton - Navigate to URL: http://yandex.com
+2018-02-13 17:48:42.035 [main] INFO  core.logger.LoggerSingleton - Actual user name is: module5testmailbox
+2018-02-13 17:49:55.052 [main] INFO  core.logger.LoggerSingleton - Properties file is readed successfully
+2018-02-13 17:49:57.308 [main] INFO  core.logger.LoggerSingleton - Chrome browser is set
+2018-02-13 17:49:57.313 [main] INFO  core.logger.LoggerSingleton - Navigate to URL: http://yandex.com
+2018-02-13 17:50:08.082 [main] INFO  core.logger.LoggerSingleton - Create 5 email(s) with random data
+2018-02-13 17:50:09.432 [main] INFO  core.logger.LoggerSingleton - Email [adress=qwerty5444@yandex.com, subject=testEmail859441, body=Hello! I'm a test email No56]
+2018-02-13 17:50:11.500 [main] INFO  core.logger.LoggerSingleton - Email [adress=qwerty224@yandex.com, subject=testEmail588241, body=Hello! I'm a test email No63]
+2018-02-13 17:50:13.129 [main] INFO  core.logger.LoggerSingleton - Email [adress=qwerty5160@yandex.com, subject=testEmail664756, body=Hello! I'm a test email No100]
+2018-02-13 17:50:14.927 [main] INFO  core.logger.LoggerSingleton - Email [adress=qwerty3661@yandex.com, subject=testEmail107873, body=Hello! I'm a test email No78]
+2018-02-13 17:50:16.462 [main] INFO  core.logger.LoggerSingleton - Email [adress=qwerty4886@yandex.com, subject=testEmail969761, body=Hello! I'm a test email No51]
+2018-02-13 17:50:18.938 [main] INFO  core.logger.LoggerSingleton - The 'Sent' folder is empty: true
+2018-02-13 17:50:19.274 [main] INFO  core.logger.LoggerSingleton - Browser will be closed now...
+2018-02-13 17:50:20.111 [main] INFO  core.logger.LoggerSingleton - Properties file is readed successfully
+2018-02-13 17:50:22.057 [main] INFO  core.logger.LoggerSingleton - Chrome browser is set
+2018-02-13 17:50:22.061 [main] INFO  core.logger.LoggerSingleton - Navigate to URL: http://yandex.com
+2018-02-13 17:50:29.257 [main] INFO  core.logger.LoggerSingleton - The number of emails in 'Draft' is: 19
+2018-02-13 17:50:29.258 [main] INFO  core.logger.LoggerSingleton - Create email with random data
+2018-02-13 17:50:30.640 [main] INFO  core.logger.LoggerSingleton - Email [adress=qwerty8701@yandex.com, subject=testEmail659119, body=Hello! I'm a test email No64]
+2018-02-13 17:51:20.467 [main] INFO  core.logger.LoggerSingleton - The email with subject 'testEmail659119' is present in 'Drafts' folder: true
+2018-02-13 17:51:20.470 [main] INFO  core.logger.LoggerSingleton - Open an email with subject: testEmail659119
+2018-02-13 17:51:20.886 [main] INFO  core.logger.LoggerSingleton - Actual email adress is: qwerty8701@yandex.com
+2018-02-13 17:51:20.928 [main] INFO  core.logger.LoggerSingleton - Actual email subject is: testEmail659119
+2018-02-13 17:51:20.969 [main] INFO  core.logger.LoggerSingleton - Actual email body is: Hello! I'm a test email No64
+2018-02-13 17:51:21.608 [main] INFO  core.logger.LoggerSingleton - Open an email with subject: testEmail659119
+2018-02-13 17:51:21.723 [main] INFO  core.logger.LoggerSingleton - Send an email from 'Drafts'
+2018-02-13 17:51:23.838 [main] INFO  core.logger.LoggerSingleton - The email with subject 'testEmail659119' is present in 'Drafts' folder: false
+2018-02-13 17:51:25.494 [main] INFO  core.logger.LoggerSingleton - Browser will be closed now...
+2018-02-13 17:51:26.297 [main] INFO  core.logger.LoggerSingleton - Properties file is readed successfully
+2018-02-13 17:51:28.220 [main] INFO  core.logger.LoggerSingleton - Chrome browser is set
+2018-02-13 17:51:28.223 [main] INFO  core.logger.LoggerSingleton - Navigate to URL: http://yandex.com
+2018-02-13 17:51:34.496 [main] INFO  core.logger.LoggerSingleton - Actual user name is: module5testmailbox
+2018-02-13 17:51:37.235 [main] INFO  core.logger.LoggerSingleton - Browser will be closed now...
