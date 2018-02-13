@@ -9,7 +9,7 @@ import step.UserSteps;
 
 @CucumberOptions(strict = true, plugin = { "json:target/cucumber-report.json", "html:target/cucumber-report" },
 		tags = {"@folders_functionality, @login, @advance_actions"},
-		features = "src/test/resources/cucumber_features/yandexmail.feature",
+		features = "src/test/resources/cucumber_features/",
 		glue = {"step"})
 
 public class YandexMailboxCucumberTestNGTest extends AbstractTestNGCucumberTests {

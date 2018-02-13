@@ -1,12 +1,8 @@
-Feature: Yandex mail box regession testing
+Feature: Yandex mail box folders test
 
   Background: 
     Given user navigates to yandex home page
     And user performs login in
-
-  @login
-  Scenario: Yandex login test
-    Then user login name is displayed at home page
 
   @folders_functionality
   Scenario Outline: Yandex Drafts and Sent folders test
@@ -25,12 +21,3 @@ Feature: Yandex mail box regession testing
       | presented | not_presented |
       | true      | false         |
 
-  @advance_actions
-  Scenario Outline: Yandex advance actions test
-    When user creates <a_number_of_emails> and sends them
-    And moves all emails to from Sent folder to trash by drag and drop
-    Then Send folder is empty
-
-    Examples: 
-      | a_number_of_emails |
-      |                  5 |
