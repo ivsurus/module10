@@ -20,6 +20,7 @@ import page.NewEmailPage;
 
 public class EmailSteps {
 
+	private final static int EMAIL_INDEX = 0;
 	private WebDriver driver;
 	private FolderSteps folderSteps;
 
@@ -55,7 +56,7 @@ public class EmailSteps {
 
 	@Then ("^correct an email adress is displayed$")
 	public void getActualEmailAdress(){
-		Email email = EmailDataBase.getEmailFromDataBase().get(0);
+		Email email = EmailDataBase.getEmailFromDataBase().get(EMAIL_INDEX);
 		String actualEmailAdress = new DraftEmailPage(driver).getEmailAdress();
 		LoggerSingleton.getLogger().info(String.format("Actual email adress is: %s", actualEmailAdress));
 		Assert.assertEquals(actualEmailAdress, email.getAdress());
@@ -63,7 +64,7 @@ public class EmailSteps {
 
 	@And("^correct an email subject is displayed$")
 	public void getActualEmailSubject(){
-		Email email = EmailDataBase.getEmailFromDataBase().get(0);
+		Email email = EmailDataBase.getEmailFromDataBase().get(EMAIL_INDEX);
 		String actualEmailSubject = new DraftEmailPage(driver).getSubject();
 		LoggerSingleton.getLogger().info(String.format("Actual email subject is: %s", actualEmailSubject));
 		Assert.assertEquals(actualEmailSubject, email.getSubject());
@@ -71,7 +72,7 @@ public class EmailSteps {
 
 	@And("^correct an email body is displayed$")
 	public void getActualEmailBody(){
-		Email email = EmailDataBase.getEmailFromDataBase().get(0);
+		Email email = EmailDataBase.getEmailFromDataBase().get(EMAIL_INDEX);
 		String actualEmailBody = new DraftEmailPage(driver).getBody();
 		LoggerSingleton.getLogger().info(String.format("Actual email body is: %s", actualEmailBody));
 		Assert.assertEquals(actualEmailBody, email.getBody());
@@ -88,6 +89,4 @@ public class EmailSteps {
 		EmailDataBase.addEmailToDataBase(email);
 		return email;
 	}
-
-
 }
