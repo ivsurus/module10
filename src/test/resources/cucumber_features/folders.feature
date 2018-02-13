@@ -14,8 +14,6 @@ Feature: Yandex mail box folders test
     And correct an email body is displayed
     When user sends an email with specified subject from Draft folder
     Then an email is not presented in Drafts <not_presented>
-    When user opens Sent folder
-    Then an email is presented in Sent
 
     Examples: 
       | presented | not_presented |

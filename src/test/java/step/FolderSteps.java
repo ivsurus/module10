@@ -4,7 +4,6 @@ import static org.testng.Assert.assertFalse;
 import static org.testng.Assert.assertTrue;
 
 import org.openqa.selenium.WebDriver;
-import org.testng.Assert;
 
 import bo.database.EmailDataBase;
 import core.driver.WebDriverSingleton;
@@ -15,7 +14,6 @@ import cucumber.api.java.en.When;
 import page.DraftEmailPage;
 import page.DraftsListPage;
 import page.SentListPage;
-import page.component.ToolbarComponent;
 
 public class FolderSteps {
 
@@ -83,21 +81,6 @@ public class FolderSteps {
 		LoggerSingleton.getLogger().info("Send an email from 'Drafts'");
 		new DraftEmailPage(driver).sendDraftEmail().toolbarComponent.openDraftsFolder().toolbarComponent.
 		waitForChangeOfNumberOfEmailsInFolder(numberEmailsInDrafts-1);
-	}
-
-	@Then("^an email is presented in Sent$")
-	public void isEmailPresentInSentList(){
-		String emailSubject = EmailDataBase.getEmailFromDataBase().get(0).getSubject();
-		boolean isEmailPresentInSentList = new SentListPage(driver).isEmailPresentInSentList(emailSubject);
-		LoggerSingleton.getLogger().info(String.format
-				("The email with subject '%s' is present in 'Sent' folder: %s", emailSubject, isEmailPresentInSentList));
-		Assert.assertTrue(isEmailPresentInSentList);
-	}
-
-	@When ("^user opens Sent folder$")
-	public void openSentFolder(){
-		LoggerSingleton.getLogger().info("Open 'Sent' folder");
-		new ToolbarComponent(driver).openSentFolder().toolbarComponent.waitForChangeOfNumberOfEmailsInFolder(1);;
 	}
 
 }
