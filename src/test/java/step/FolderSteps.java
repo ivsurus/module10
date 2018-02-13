@@ -97,7 +97,7 @@ public class FolderSteps {
 	@When ("^user opens Sent folder$")
 	public void openSentFolder(){
 		LoggerSingleton.getLogger().info("Open 'Sent' folder");
-		new ToolbarComponent(driver).openSentFolder().toolbarComponent.waitForChangeOfNumberOfEmailsInFolder(4);;
+		new ToolbarComponent(driver).openSentFolder().toolbarComponent.waitForChangeOfNumberOfEmailsInFolder(1);;
 	}
 
 }

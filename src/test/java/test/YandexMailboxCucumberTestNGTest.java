@@ -1,7 +1,9 @@
 package test;
 
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 
+import bo.database.EmailDataBase;
 import core.driver.WebDriverSingleton;
 import cucumber.api.CucumberOptions;
 import cucumber.api.testng.AbstractTestNGCucumberTests;
@@ -13,6 +15,11 @@ import step.UserSteps;
 		glue = {"step"})
 
 public class YandexMailboxCucumberTestNGTest extends AbstractTestNGCucumberTests {
+
+	@BeforeMethod (description = "create new email data base for each test")
+	private void setUp(){
+		EmailDataBase.instatiateEmailDataBase();
+	}
 
 	@AfterMethod (description = "Log out and close all browsers")
 	private void cleanUp(){

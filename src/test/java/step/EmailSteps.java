@@ -1,8 +1,5 @@
 package step;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 
@@ -31,27 +28,23 @@ public class EmailSteps {
 	}
 
 	@When("^user creates (\\d+) and sends them$")
-	public List<Email> createANumberOfEmailsWithRandomDataAndSendThem(int numberOfEmails){
+	public void createANumberOfEmailsWithRandomDataAndSendThem(int numberOfEmails){
 		LoggerSingleton.getLogger().info(String.format("Create %s email(s) with random data", numberOfEmails));
 		NewEmailPage newEmailPage = new NewEmailPage(driver);
-		List<Email> emails = new ArrayList<>();
 		for (int i=0; i<numberOfEmails; i++){
-			Email email = createNewEmailAndFillInData();
-			emails.add(email);
+			createNewEmailAndFillInData();
 			newEmailPage.sendEmail();
 		}
-		return emails;
 	}
 
 	@When("^user creates an email and saves it to Draft folder$")
-	public Email createEmailWithRandomDataAndSaveToDrafts(){
+	public void createEmailWithRandomDataAndSaveToDrafts(){
 		NewEmailPage newEmailPage = new NewEmailPage(driver);
 		int numberEmailsInDrafts = folderSteps.getnumberEmailsInDrafts();
 		LoggerSingleton.getLogger().info("Create email with random data");
-		Email email = createNewEmailAndFillInData();
+		createNewEmailAndFillInData();
 		newEmailPage.closeEmailAndSaveToDraft().toolbarComponent.openDraftsFolder().
 		toolbarComponent.waitForChangeOfNumberOfEmailsInFolder(numberEmailsInDrafts+1);
-		return email;
 	}
 
 	@Then ("^correct an email adress is displayed$")
